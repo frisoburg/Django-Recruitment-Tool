@@ -26,10 +26,7 @@ class SeekerListCreate(generics.ListCreateAPIView):
         return Seeker.objects.all()
 
     def perform_create(self, serializer):
-        if serializer.is_valid():
-            serializer.save()
-        else:
-            print(serializer.errors)
+        serializer.save()
 
 class SeekerDelete(generics.DestroyAPIView):
     serializer_class = SeekerSerializer
