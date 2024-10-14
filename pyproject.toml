@@ -12,6 +12,16 @@ pandas = "^2.2.3"
 openai = "^1.51.2"
 pinecone = "^5.3.1"
 django = "^5.1.2"
+asgiref = "^3.8.1"
+django-cors-headers = "^4.5.0"
+djangorestframework = "^3.15.2"
+djangorestframework-simplejwt = "^5.3.1"
+pyjwt = "^2.9.0"
+pytz = "^2024.2"
+sqlparse = "^0.5.1"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+npm = "^0.1.1"
 
 
 [build-system]
