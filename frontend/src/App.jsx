@@ -1,5 +1,5 @@
 import react from "react"
-import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route,Navigate, Form } from "react-router-dom"
 import Login from "./pages/login"
 import Register from "./pages/Register"
 import Home from "./pages/Home"
@@ -38,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export default Form
