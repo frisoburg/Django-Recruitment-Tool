@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-// import Seeker from "../components/Seeker"
+import Seeker from "../components/Seeker"
 import api from "../api";
+import "../styles/Home.css"
 
 function Home() {
     const [seekers, setSeekers] = useState([]);
@@ -79,6 +80,13 @@ function Home() {
 
     return (
         <div>
+            <h2>Seeker Profiles</h2>
+            <div>
+                {seekers.map((seeker) => (
+                    <Seeker seeker={seeker} onDelete={deleteSeeker} key={seeker.id} />
+                ))}
+            </div>
+
             <h2>Create a Seeker Profile</h2>
             <form onSubmit={createSeeker}>
                 <label htmlFor="name">Name:</label>
@@ -198,7 +206,7 @@ function Home() {
                     onChange={(e) => setDesiredSalary(parseInt(e.target.value))}
                 />
 
-                <label htmlFor="availibility">Availibility:</label>
+                <label htmlFor="availibility">Availability:</label>
                 <input
                     type="text"
                     id="availibility"

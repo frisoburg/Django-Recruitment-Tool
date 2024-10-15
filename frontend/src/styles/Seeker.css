@@ -1,0 +1,70 @@
+/* seeker.css */
+
+.seeker-container {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .seeker-name {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .seeker-description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .seeker-email,
+  .seeker-phone,
+  .seeker-location,
+  .seeker-job-title,
+  .seeker-company,
+  .seeker-skills,
+  .seeker-languages,
+  .seeker-certifications,
+  .seeker-linkedin,
+  .seeker-experience,
+  .seeker-education,
+  .seeker-salary,
+  .seeker-availability {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .seeker-linkedin a {
+    color: #0073b1; /* LinkedIn blue */
+    text-decoration: none;
+  }
+  
+  .seeker-linkedin a:hover {
+    text-decoration: underline;
+  }
+  
+  .seeker-date {
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+  
